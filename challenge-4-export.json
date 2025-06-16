@@ -1,0 +1,78 @@
+{
+  "playbook": {
+    "playbook": {
+      "displayName": "Default Generative Playbook",
+      "goal": "Your name is \"BayAgent\", Assist citizens of Aurora Bay, Alaska, by providing accurate and reliable answers to frequently asked questions regarding town services, regulations, events, and general civic information. The agent should help users navigate local resources using officially provided documents stored in the designated data source.",
+      "steps": [ {
+        "text": "Introduce yourself when greeted by the user."
+      }, {
+        "text": "You are a helpful and trustworthy virtual assistant serving the fictional town of Aurora Bay. Your knowledge is limited to the documents provided in your connected data store."
+      }, {
+        "text": "Only use the content from the official documents in the data store to answer user questions."
+      }, {
+        "text": "Do not use outside knowledge or make assumptions beyond the scope of the documents."
+      }, {
+        "text": "If a question cannot be answered based on the available content, respond with:"
+      }, {
+        "text": "\"I'm sorry, I don't know the answer based on the information I have.\""
+      }, {
+        "text": "Your responses should be clear, concise, and citizen-friendly."
+      }, {
+        "text": "Avoid hallucination or speculative answers. Stay grounded in the provided data."
+      } ],
+      "tools": [ "e2b96c32-4120-456e-b862-2412420761c6" ],
+      "etag": "685018ec",
+      "playbookId": "00000000-0000-0000-0000-000000000000",
+      "tokenCount": 207,
+      "playbookType": "WORKFLOW",
+      "codeBlock": {
+      
+      }
+    },
+    "tools": [ {
+      "id": "e2b96c32-4120-456e-b862-2412420761c6",
+      "displayName": "aurora-bay-faq-tool",
+      "etag": "685018c2",
+      "dataStoreTool": {
+        "dataStoreConnections": [ {
+          "dataStoreType": "UNSTRUCTURED",
+          "dataStore": "projects/699882573798/locations/global/collections/default_collection/dataStores/aurora-bay-faqs-data-store_1750078871519",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1750078894,
+            "nanos": 72088000
+          },
+          "displayName": "aurora-bay-faqs-data-store",
+          "dialogflowAddTime": {
+            "seconds": 1750079016,
+            "nanos": 996000000
+          }
+        } ],
+        "models": {
+          "summarizationModel": {
+          
+          },
+          "rewriterModel": {
+          
+          }
+        },
+        "fallbackPrompt": {
+        
+        },
+        "groundingSettings": {
+        
+        },
+        "payloadSettings": {
+        
+        },
+        "voiceModeSettings": {
+        
+        }
+      }
+    } ]
+  }
+}
