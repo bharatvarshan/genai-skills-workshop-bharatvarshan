@@ -1,0 +1,16 @@
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+google-cloud-bigquery==3.17.2
+google-cloud-aiplatform>=1.52.0
+pandas>=2.0.0
+db-dtypes>=1.0.0
+pytest
+nltk
+transformers
+evaluate
+bert-score
+sentence-transformers
+tabulate
+rouge-score
+torch
+streamlit==1.35.0
